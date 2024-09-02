@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark {
+            background-color: #333;
+            color: white;
+        }
+
+        .cartPadding {
+            padding-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--- saving user theme preferences (LocalStorage example)-->
+    <div class="cartPadding">
+        <p>select the theme</p>
+        <input type="button" value="dark theme" id="darkTheme">
+        <input type="button" value="light theme" id="lightTheme">
+
+    </div>
+
+
+
+    <!---shopping cart application (SessionStorage example)---->
+    <h1>Shopping Cart</h1>
+    <div id="products">
+        <div>
+            <p>product1</p>
+            <button onclick="addToCart('product1')">add to cart</button>
+        </div>
+        <div>
+            <p>Product 2</p>
+            <button onclick="addToCart('Product 2')">Add to Cart</button>
+        </div>
+        <div>
+            <p>Product 3</p>
+            <button onclick="addToCart('Product 3')">Add to Cart</button>
+        </div>
+    </div>
+
+
+    <div class="cartPadding">
+        <h2>Your Cart</h2>
+        <ul id="cartItems"></ul>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+
+
+    
+    <!---Users login (SessionStorage example)---->
+    <h4>account login</h4>
+
+    <div id="loginForm" style="margin-bottom: 50px;">
+        <input type="text" id="userName" placeholder="Username" required ><br><br>
+        <input type="password" id="userPassword" placeholder="Password" required> <br><br>
+        <button onclick="login()">login</button>
+    </div>
+
+    
+    <div id="welcomeMessage" style="display: none;">
+        <p>Welcome, <span id="user"></span>!</p>
+        <button onclick="logout()">Logout</button>
+    </div>
+
+
+
+
+    <!-- Exercise -->
+    <div class="counter" id="counter"></div>
+    <div>
+        <input type="button" id="increase" value="increase" > 
+        <input type="button" id="decrease" value="decrease" >
+    
+    </div>
+
+    <script src="javascript/localStorage.js"></script>
+</body>
+
+</html>

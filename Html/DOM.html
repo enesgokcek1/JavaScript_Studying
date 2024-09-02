@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<style>
+    .text-primary {
+        color: blue;
+    }
+</style>
+
+<body>
+
+
+    <!-- Örnek çalışma css dom-->
+    <button class="buttonProperty" type="button">Buton</button>
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+    <!-- ürün ekleme listesi-->
+
+    <input type="text" id="urun">
+    <button type="button" id="ekle">Ürün ekle</button><br>
+    <ol id="liste"></ol>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!-- MY FORM-->
+
+    <form name="myForm" onsubmit="return validateForm()">
+
+        <input type="text" name="fname" placeholder="Enter your name">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <!-- MY FUNCTION-->
+
+    <h2>JavaScript Validation</h2>
+
+    <p>Please input a number between 1 and 10:</p>
+
+    <input id="numb" type="number" min="1" max="10">
+
+    <button type="button" onclick="myFunction()">Submit</button>
+
+    <p id="mfnct"></p>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <!-- BUTTON COLOR CHANGE -->
+
+    <h2 id="color">My head</h2>
+    <button type="button" name="deger" onclick="buttonColorChange()">Click me</button>
+
+
+
+
+    <h3 onclick="this.innerHTML='opss'">click next</h3>
+
+    <h2 onclick="changeText(this)">Click on this text!</h2>
+
+    <button onclick="displayDate()">The time is?</button>
+
+    <p id="dispDate"></p>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+    <!-- UPPERCASE-->
+
+
+    Enter your name: <input type="text" id="fname" oninput="upperCase()">
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+    <!-- ADD EVENT LİSTENER-->
+
+    <button id="eventListener" type="button" style="color: yellowgreen; background-color: black;"> EVENT BUTTON</button>
+
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+    <!-- MOUSE OVER OUT DOWN UP-->
+    <p>click try the execute displDate() function</p>
+
+    <button id="clickBUTTON">Try it</button>
+
+    <p id="cvb"></p>
+
+
+
+
+
+
+    <div onmouseover="mouseOver(this)" onmouseout="mouseOut(this)"
+        style="background-color: brown; padding: 20px; width: 120px; height: 20px; text-align: center;">
+        mouse over me
+    </div>
+
+
+
+    <div onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"
+        style="background-color: gray; height: 20px; width: 120px; padding: 20px; text-align: center;">mouse down me
+    </div>
+
+
+
+
+    <button id="opButton" style="padding: 30px; text-align: center;">Try it</button>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!-- JS DOM EXERCISES, PRACTICE 1 -->
+
+    <p id='text'>if you click the down button it will change color font size and font family </p>
+    <button id="jsstyle" onclick="js_style()">Button :)</button> <br> <br>
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!-- JS DOM EXERCISES, PRACTICE 2 -->
+
+
+    <form id="form1">
+        first name : <input type="text" id="formFName" required> <br>
+        last name : <input type="text" id="formLName" required> <br>
+        <button type="submit" id="uhyt">Gönder</button>
+    </form>
+
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+    <!-- JS DOM EXERCISES, PRACTICE 3 -->
+
+
+    <input type="button" id="clickBgc" onclick="bgcChange()" value="deger">
+    <p id="bgc1">bgc1</p>
+    <p id="bgc2">bgc2</p>
+
+
+
+    <!---------------------------------------------------------------------------------------------------------------------->
+
+
+    <!-- JS DOM EXERCISES, PRACTICE 4 -->
+
+
+
+
+    
+    <p><a href="https://www.w3resource.com/javascript-exercises/javascript-dom-exercises.php" id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self">w3resource</a></p>
+    <button type="buttonw" onclick="getAttributes()"> click here to get attributes value</button>
+    
+
+
+
+
+    <script src="javascript/DOM.js"></script>
+
+</body>
+
+</html>

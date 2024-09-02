@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <h1>Form Exercise</h1>
+
+    <!-- Form submit not default-->
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-8 offset-sm-2">
+                <form id="userForm" method="post">
+                    <!-- There are two form methods: Get and Post. Post method has more security-->
+                    <input type="text" name="score" id="score">
+                    <button type="reset" class="btn btn-danger">Delete</button>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Basic Form -->
+    
+<div class="container mt-5" >
+    <div class="row">
+        <div class="col-sm-4">
+            <h1>Basic Form</h1>
+            <form id="form" method="post">
+                <input type="text" id="fName" placeholder="please enter your name" required>
+                <input type="text" id="lName" placeholder="please enter surname" required>
+                <input type="tel" id="userPhone" placeholder="please enter your phone number" required>
+                <input type="email" id="userEmail" placeholder="please enter your email address" required>
+                <button type="submit" id="formSubmit" class="btn btn-success mt-2">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+   
+<!-- study with form -->
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-sm-8 offset-sm-2">
+            <form id="userForm">
+                <div class="mb-3">
+                    <label class="form-label" for="username">Username</label>
+                    <input class="form-control" type="text" name="username" id="username">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="score">notes ınfo</label>
+                    <input class="form-control" type="number" name="score" id="score">
+                </div>
+                <div class="mb-3">
+
+                    <button type="reset" class="btn btn-danger">delete</button>
+                    <button type="submit" class="btn btn-success">submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-8 offset-sm-2 mt-4">
+            <ul class="list-group" id="userList">
+                
+              </ul>
+        </div>
+    </div>
+</div>
+
+  <script src="javascript/Form.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+  crossorigin="anonymous"></script>
+
+</body>
+
+</html>
